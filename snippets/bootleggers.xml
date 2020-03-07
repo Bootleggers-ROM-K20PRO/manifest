@@ -10,6 +10,10 @@
            fetch="https://github.com/BootleggersROM-Devices"
            revision="refs/heads/queso" />
 
+  <remote  name="taran"
+           fetch="https://github.com/taranhora"
+           revision="refs/heads/queso" />
+
   <remote  name="github"
            fetch="https://github.com/" />
 
@@ -52,20 +56,20 @@
 
   <!-- Framework -->
   <project path="frameworks/av" name="frameworks_av" remote="bootleggers" />
-  <project path="frameworks/base" name="frameworks_base" remote="bootleggers" />
+  <project path="frameworks/base" name="frameworks_base" remote="taran" />
   <project path="frameworks/native" name="frameworks_native" remote="bootleggers" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/tools-bootleg" name="prebuilts_tools-bootleg" remote="bootleggers" clone-depth="1" />
 
   <!-- Packages repos -->
-  <project path="packages/apps/BootlegDumpster" name="packages_apps_BootlegDumpster" remote="bootleggers" />
+  <project path="packages/apps/BootlegDumpster" name="packages_apps_BootlegDumpster" remote="taran" />
   <project path="packages/apps/Jelly" name="packages_apps_Jelly" remote="bootleggers" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="bootleggers" />
   <project path="packages/apps/Phonograph" name="packages_apps_Phonograph" remote="bootleggers" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="bootleggers" />
   <project path="packages/apps/Recorder" name="packages_apps_Recorder" remote="bootleggers" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="bootleggers" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="taran" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="bootleggers" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="bootleggers" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="bootleggers" />
