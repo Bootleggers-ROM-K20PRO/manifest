@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="bootleggers"
-           fetch="https://github.com/BootleggersROM"
+           fetch="https://github.com/Bootleggers-BrokenLab"
            review="review.bootleggersrom.xyz"
            revision="refs/heads/queso" />
 
@@ -12,6 +12,10 @@
 
   <remote  name="taran"
            fetch="https://github.com/taranhora"
+           revision="refs/heads/queso" />
+
+  <remote  name="K20"
+           fetch="https://github.com/Bootleggers-ROM-K20PRO"
            revision="refs/heads/queso" />
 
   <remote  name="github"
@@ -51,13 +55,13 @@
   <project path="external/tinycompress" name="external_tinycompress" remote="bootleggers" />
 
   <!-- Hardware -->
-  <project path="hardware/bootleg/interfaces" name="hardware_bootleg_interfaces" remote="bootleggers" />
+  <project path="hardware/bootleg/interfaces" name="hardware_bootleg_interfaces" remote="K20" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="bootleggers" />
 
   <!-- Framework -->
-  <project path="frameworks/av" name="frameworks_av" remote="bootleggers" />
+  <project path="frameworks/av" name="frameworks_av" remote="K20" />
   <project path="frameworks/base" name="frameworks_base" remote="taran" />
-  <project path="frameworks/native" name="frameworks_native" remote="bootleggers" />
+  <project path="frameworks/native" name="frameworks_native" remote="K20" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/tools-bootleg" name="prebuilts_tools-bootleg" remote="bootleggers" clone-depth="1" />
@@ -85,6 +89,6 @@
   <project path="system/vold" name="system_vold" remote="bootleggers" />
 
   <!-- Vendor -->
-  <project path="vendor/bootleggers" name="vendor_bootleggers" remote="bootleggers" />
+  <project path="vendor/bootleggers" name="vendor_bootleggers" remote="K20" />
 
 </manifest>
