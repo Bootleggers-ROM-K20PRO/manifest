@@ -27,7 +27,7 @@
   <!-- General -->
   <project path="bionic" name="bionic" remote="bootleggers" />
   <project path="bootable/recovery" name="bootable_recovery" remote="bootleggers" />
-  <project path="manifest" name="manifest" remote="bootleggers" />
+  <project path="manifest" name="manifest" remote="K20" />
 
   <!-- Build -->
   <project path="build/make" name="build" remote="bootleggers">
@@ -46,13 +46,13 @@
   </project>
 
   <!-- Device -->
-  <project path="device/bootleg/sepolicy" name="device_bootleg_sepolicy" remote="bootleggers" />
+  <project path="device/bootleg/sepolicy" name="device_bootleg_sepolicy" remote="K20" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="bootleggers" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" remote="bootleggers" revision="queso-legacy-um"/>
   <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy" remote="bootleggers" revision="queso-legacy"/>
 
   <!-- External -->
-  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="bootleggers" />
+  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="K20" />
   <project path="external/tinycompress" name="external_tinycompress" remote="bootleggers" />
 
   <!-- Hardware -->
@@ -61,7 +61,7 @@
 
   <!-- Framework -->
   <project path="frameworks/av" name="frameworks_av" remote="K20" />
-  <project path="frameworks/base" name="frameworks_base" remote="taran" />
+  <project path="frameworks/base" name="frameworks_base" remote="taran" revision="fod" />
   <project path="frameworks/native" name="frameworks_native" remote="K20" />
 
   <!-- Prebuilts -->
@@ -69,7 +69,7 @@
 
   <!-- Packages repos -->
   <project path="packages/apps/BootlegDumpster" name="packages_apps_BootlegDumpster" remote="taran" />
-  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="bootleggers" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="K20" />
   <project path="packages/apps/Jelly" name="packages_apps_Jelly" remote="bootleggers" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="bootleggers" />
   <project path="packages/apps/Phonograph" name="packages_apps_Phonograph" remote="bootleggers" />
@@ -78,7 +78,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="taran" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="bootleggers" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="bootleggers" />
-  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="bootleggers" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="K20" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="bootleggers" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="bootleggers" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="bootleggers" />
@@ -88,8 +88,8 @@
   <!-- System -->
   <project path="system/bt" name="system_bt" remote="bootleggers" />
   <project path="system/core" name="system_core" remote="bootleggers" />
-  <project path="system/netd" name="system_netd" remote="bootleggers" />
-  <project path="system/sepolicy" name="system_sepolicy" remote="bootleggers" />
+  <project path="system/netd" name="system_netd" remote="K20" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="K20" />
   <project path="system/vold" name="system_vold" remote="bootleggers" />
 
   <!-- Vendor -->
