@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="bootleggers"
-           fetch="https://github.com/Bootleggers-BrokenLab"
+           fetch="https://github.com/BootleggersROM"
            review="review.bootleggersrom.xyz"
            revision="refs/heads/queso" />
 
@@ -27,7 +27,7 @@
   <!-- General -->
   <project path="bionic" name="bionic" remote="bootleggers" />
   <project path="bootable/recovery" name="bootable_recovery" remote="bootleggers" />
-  <project path="manifest" name="manifest" remote="bootleggers" />
+  <project path="manifest" name="manifest" remote="K20" />
 
   <!-- Build -->
   <project path="build/make" name="build" remote="bootleggers">
@@ -46,7 +46,7 @@
   </project>
 
   <!-- Device -->
-  <project path="device/bootleg/sepolicy" name="device_bootleg_sepolicy" remote="bootleggers" />
+  <project path="device/bootleg/sepolicy" name="device_bootleg_sepolicy" remote="K20" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="bootleggers" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" remote="bootleggers" revision="queso-legacy-um"/>
   <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy" remote="bootleggers" revision="queso-legacy"/>
@@ -61,7 +61,7 @@
 
   <!-- Framework -->
   <project path="frameworks/av" name="frameworks_av" remote="K20" />
-  <project path="frameworks/base" name="frameworks_base" remote="taran" />
+  <project path="frameworks/base" name="frameworks_base" remote="taran" revision="fod" />
   <project path="frameworks/native" name="frameworks_native" remote="K20" />
 
   <!-- Prebuilts -->
